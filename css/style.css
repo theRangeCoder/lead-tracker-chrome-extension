@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+input {
+    width: 100%; /* width = 100% includes the complete width of the container and padding is added on top of that */
+    box-sizing: border-box; /* to ensure that the padding is included in the 'width' */
+    padding: 10px;
+    border: 2px solid #5b5679;
+}
+
+button {
+    background-color: #5b5679;
+    margin-top: 4px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
