@@ -13,3 +13,7 @@ InputBtn.addEventListener("click", function() {
     console.log("Input saved!");
 });
 
+InputBtn.addEventListener("click", function() {
+    myLeads.push("www.awesomelead.com");
+});
+
