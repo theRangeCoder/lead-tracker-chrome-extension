@@ -2,11 +2,8 @@
 let myLeads = [];
 
 const inputEl = document.querySelector("#input-el");
-
-// For the SAVE INPUT button
-
-// Getting the SAVE INPUT button element
 const InputBtn = document.getElementById("input-btn");
+const ulEl = document.getElementById("ul-el");
 
 // Adding an event listener to it
 InputBtn.addEventListener("click", function() {
@@ -18,6 +15,6 @@ InputBtn.addEventListener("click", function() {
 });
 
 for (let i = 0; i < myLeads.length; i++) {
-    console.log(myLeads[i]);
+    ulEl.textContent += myLeads[i] + " ";
 }
 
