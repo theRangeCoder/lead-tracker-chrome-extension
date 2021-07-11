@@ -14,6 +14,6 @@ InputBtn.addEventListener("click", function() {
 });
 
 InputBtn.addEventListener("click", function() {
-    myLeads.push("www.awesomelead.com");
+    myLeads.push(inputEl.value);
 });
 
