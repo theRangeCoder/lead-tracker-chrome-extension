@@ -21,3 +21,7 @@ button {
     border-radius: 5px;
     font-weight: bold;
 }
+
+#ul-el {
+    text-align: left;
+}
