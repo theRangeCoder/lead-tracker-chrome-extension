@@ -15,7 +15,17 @@ InputBtn.addEventListener("click", function() {
     renderLeads();
 });
 
+// A function to render the leads on the page
+function renderLeads() {
+    // Since DOM manipulation comes at a cost, we manipulate the DOM outside the for loop, to render the leads
 
+    let leadItems = "";
+    for (let i = 0; i < myLeads.length; i++) {
+        leadItems += "<li>" + myLeads[i] + "</li>";
+    }
+
+    ulEl.innerHTML = leadItems;
+}
 
 
 
