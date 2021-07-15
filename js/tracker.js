@@ -22,7 +22,7 @@ function renderLeads() {
 
     let leadItems = "";
     for (let i = 0; i < myLeads.length; i++) {
-        leadItems += "<li>" + myLeads[i] + "</li>";
+        leadItems += "<li><a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>";
     }
 
     ulEl.innerHTML = leadItems;
