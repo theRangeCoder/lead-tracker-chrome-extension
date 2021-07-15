@@ -12,6 +12,7 @@ InputBtn.addEventListener("click", function() {
 
 InputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value);
+    inputEl.value = '';
     renderLeads();
 });
 
