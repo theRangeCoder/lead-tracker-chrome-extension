@@ -25,3 +25,18 @@ button {
 #ul-el {
     text-align: left;
 }
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 25px;
+}
+
+li {
+    margin-top: 5px;
+}
+
+/* Anchor tag living inside list items */
+li a {
+    color: #5b5679;
+}
