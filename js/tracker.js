@@ -5,6 +5,12 @@ const inputEl = document.querySelector("#input-el");
 const InputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
 
+// Getting the leads from the local storage
+let leadsFromLocalStorage = localStorage.getItem("myLeads");
+// Converting the string of leads to an array
+leadsFromLocalStorage = JSON.parse(leadsFromLocalStorage);
+
+
 // Adding an event listener to it
 InputBtn.addEventListener("click", function() {
     console.log("Input saved!");
