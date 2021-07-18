@@ -13,6 +13,9 @@ InputBtn.addEventListener("click", function() {
 InputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value);
     inputEl.value = '';
+
+    // Storing the leads in the local storage
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));
     renderLeads();
 });
 
