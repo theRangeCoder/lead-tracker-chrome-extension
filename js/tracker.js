@@ -10,6 +10,11 @@ let leadsFromLocalStorage = localStorage.getItem("myLeads");
 // Converting the string of leads to an array
 leadsFromLocalStorage = JSON.parse(leadsFromLocalStorage);
 
+// Checking the local storage for non-emptiness before rendering out the previously saved leads
+if (leadsFromLocalStorage) {
+    myLeads = leadsFromLocalStorage;
+    renderLeads();
+}
 
 // Adding an event listener to it
 InputBtn.addEventListener("click", function() {
