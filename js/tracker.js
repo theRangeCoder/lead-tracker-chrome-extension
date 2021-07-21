@@ -4,6 +4,7 @@ let myLeads = [];
 const inputEl = document.querySelector("#input-el");
 const InputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
+const DeleteBtn = document.getElementById("delete-btn");
 
 // Getting the leads from the local storage
 let leadsFromLocalStorage = localStorage.getItem("myLeads");
@@ -16,14 +17,15 @@ if (leadsFromLocalStorage) {
     renderLeads();
 }
 
-// Adding an event listener to it
-InputBtn.addEventListener("click", function() {
-    console.log("Input saved!");
+DeleteBtn.addEventListener("dblclick", function() {
+    localStorage.clear();
+    myLeads = [];
+    renderLeads();
 });
 
 InputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value);
-    inputEl.value = '';
+    inputEl.value = "";
 
     // Storing the leads in the local storage
     localStorage.setItem("myLeads", JSON.stringify(myLeads));
