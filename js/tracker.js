@@ -6,6 +6,20 @@ const InputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
 const DeleteBtn = document.getElementById("delete-btn");
 
+// A function to render the leads on the page
+function render(leads) {
+    // Since DOM manipulation comes at a cost, we manipulate the DOM outside the for loop, to render the leads
+
+    let leadItems = "";
+    for (let i = 0; i < leads.length; i++) {
+        leadItems += `<li>
+        <a target='_blank' href='${leads[i]}'>${leads[i]}</a>
+        </li>`;
+    }
+
+    ulEl.innerHTML = leadItems;
+}
+
 // Getting the leads from the local storage
 let leadsFromLocalStorage = localStorage.getItem("myLeads");
 // Converting the string of leads to an array
@@ -14,13 +28,13 @@ leadsFromLocalStorage = JSON.parse(leadsFromLocalStorage);
 // Checking the local storage for non-emptiness before rendering out the previously saved leads
 if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage;
-    renderLeads();
+    render(myLeads);
 }
 
 DeleteBtn.addEventListener("dblclick", function() {
     localStorage.clear();
     myLeads = [];
-    renderLeads();
+    render(myLeads);
 });
 
 InputBtn.addEventListener("click", function() {
@@ -29,22 +43,7 @@ InputBtn.addEventListener("click", function() {
 
     // Storing the leads in the local storage
     localStorage.setItem("myLeads", JSON.stringify(myLeads));
-    renderLeads();
+    render(myLeads);
 });
-
-// A function to render the leads on the page
-function renderLeads() {
-    // Since DOM manipulation comes at a cost, we manipulate the DOM outside the for loop, to render the leads
-
-    let leadItems = "";
-    for (let i = 0; i < myLeads.length; i++) {
-        leadItems += `<li>
-        <a target='_blank' href='${myLeads[i]}'>${myLeads[i]}</a>
-        </li>`;
-    }
-
-    ulEl.innerHTML = leadItems;
-}
-
 
 
