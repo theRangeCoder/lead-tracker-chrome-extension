@@ -32,7 +32,7 @@ if (leadsFromLocalStorage) {
     render(myLeads);
 }
 
-DeleteBtn.addEventListener("dblclick", function() {
+DeleteBtn.addEventListener("click", function() {
     localStorage.clear();
     myLeads = [];
     render(myLeads);
