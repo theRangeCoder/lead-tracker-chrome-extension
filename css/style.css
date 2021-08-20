@@ -7,8 +7,12 @@ body {
 }
 
 input {
-    width: 100%; /* width = 100% includes the complete width of the container and padding is added on top of that */
-    box-sizing: border-box; /* to ensure that the padding is included in the 'width' */
+    /* width = 100% includes the complete width of the container and padding is added on top of that */
+    width: 100%; 
+
+    /* to ensure that the padding is included in the 'width' */
+    box-sizing: border-box; 
+    
     padding: 10px;
     border: 2px solid #5b5679;
 }
