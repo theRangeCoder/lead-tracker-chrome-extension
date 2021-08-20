@@ -1,11 +1,11 @@
 // To store the leads
-let myLeads = [];
+let MyLeads = [];
 
-const inputEl = document.querySelector("#input-el");
+const InputEl = document.getElementById("input-el");
 const InputBtn = document.getElementById("input-btn");
-const ulEl = document.getElementById("ul-el");
+const UlEl = document.getElementById("ul-el");
 const DeleteBtn = document.getElementById("delete-btn");
-const tabBtn = document.getElementById("tab-btn");
+const TabBtn = document.getElementById("tab-btn");
 
 // A function to render the leads on the page
 function render(leads) {
@@ -18,40 +18,40 @@ function render(leads) {
         </li>`;
     }
 
-    ulEl.innerHTML = leadItems;
+    UlEl.innerHTML = leadItems;
 }
 
 // Getting the leads from the local storage
-let leadsFromLocalStorage = localStorage.getItem("myLeads");
+let LeadsFromLocalStorage = localStorage.getItem("MyLeads");
 // Converting the string of leads to an array
-leadsFromLocalStorage = JSON.parse(leadsFromLocalStorage);
+LeadsFromLocalStorage = JSON.parse(LeadsFromLocalStorage);
 
 // Checking the local storage for non-emptiness before rendering out the previously saved leads
-if (leadsFromLocalStorage) {
-    myLeads = leadsFromLocalStorage;
-    render(myLeads);
+if (LeadsFromLocalStorage) {
+    MyLeads = LeadsFromLocalStorage;
+    render(MyLeads);
 }
 
 DeleteBtn.addEventListener("click", function() {
     localStorage.clear();
-    myLeads = [];
-    render(myLeads);
+    MyLeads = [];
+    render(MyLeads);
 });
 
 InputBtn.addEventListener("click", function() {
-    myLeads.push(inputEl.value);
-    inputEl.value = "";
+    MyLeads.push(InputEl.value);
+    InputEl.value = "";
 
     // Storing the leads in the local storage
-    localStorage.setItem("myLeads", JSON.stringify(myLeads));
-    render(myLeads);
+    localStorage.setItem("MyLeads", JSON.stringify(MyLeads));
+    render(MyLeads);
 });
 
-tabBtn.addEventListener("click", function(){    
+TabBtn.addEventListener("click", function(){    
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
-        myLeads.push(tabs[0].url)
-        localStorage.setItem("myLeads", JSON.stringify(myLeads) )
-        render(myLeads)
+        MyLeads.push(tabs[0].url)
+        localStorage.setItem("MyLeads", JSON.stringify(MyLeads) )
+        render(MyLeads)
     });
 });
 
