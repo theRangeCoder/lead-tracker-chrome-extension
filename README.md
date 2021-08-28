@@ -93,11 +93,11 @@ Once you have successfully added the extension to your Chrome Browser, you can s
 
 Have a lead in mind, that you would like to save manually? The `SAVE INPUT` button can be pretty handy in here.<br/>
 
-<div style="text-align:center"><img src="./img/save_input.png" /></div>
+<div style="text-align:center"><img src="./img/save_input.png" /></div><br/>
 
 To save leads from particular websites, the `SAVE TAB` button could be a good option.<br/>
 
-<div style="text-align:center"><img src="./img/save_tab.png" /></div>
+<div style="text-align:center"><img src="./img/save_tab.png" /></div><br/>
 
 And finally, once you have completed the interactions with the current leads and would like to remove them from the list (in order to be able to create a new list of leads), the `DELETE ALL` button can be pretty useful for that.
 
