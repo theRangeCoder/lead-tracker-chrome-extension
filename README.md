@@ -121,7 +121,7 @@ The README template, used for this project, was distributed under the MIT Licens
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* Inspiration and code resource credits: [Per Harald Borgen's JavaScript course](https://scrimba.com/learn/learnjavascript)
+* The code was adapted from [Per Harald Borgen's JavaScript course](https://scrimba.com/learn/learnjavascript)
 * [Othneil Drew](https://www.othneildrew.com) for the [README template](https://github.com/othneildrew/Best-README-Template)
 * <a target="_blank" href="https://icons8.com/icon/89862/euro">Tracker icon</a> by <a target="_blank" href="https://icons8.com">Icons8</a>
 
