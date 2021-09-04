@@ -37,7 +37,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<div style="text-align:center"><img src="./img/lt_initial.png" /></div>
+![Demo](https://user-images.githubusercontent.com/82150130/132095602-58a59882-a6c9-4ab6-bf6c-cbb2e25cdbc4.gif)
 
 It can indeed be challenging sometimes for marketers and sales representatives to keep an organized track of potential leads for their products. After all, getting a lead to develop trust in the company's brand and make up his/ her mind to make a purchase, does require a lot more than just keeping track of them.<br/>
 
