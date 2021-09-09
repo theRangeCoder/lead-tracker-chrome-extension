@@ -67,7 +67,7 @@ To get a local copy of the app, up and running on your system, follow these step
 
 2. Clone the repository
    ```sh
-   git clone https://github.com/theRangeCoder/lead-tracker-chrome-extension.git
+   git clone https://github.com/[your_username]/lead-tracker-chrome-extension.git
    ```
 
 ### Adding it to your Chrome browser as an extension
